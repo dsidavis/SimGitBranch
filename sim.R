@@ -1,7 +1,7 @@
 sim =
-function(T = max, B = 999, n = 35, ...)
+function(T = max, B = 999, n = 35, rate = 1)
 {
-   replicate(B, T(rexp(n, ...)))
+   replicate(B, T(rexp(n, rate)))
 }
 
 ans = sim()
