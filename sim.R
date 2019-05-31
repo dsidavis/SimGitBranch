@@ -1,5 +1,13 @@
-B = 999
-ans = replicate(B, max(rexp(35, 1)))
+sim =
+function(T = max, B = 999)
+{
+   replicate(B, T(rexp(35, 1)))
+}
+
+ans = sim()
+ans = sim(min)
+
+
 
 
 
